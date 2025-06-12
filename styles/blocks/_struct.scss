@@ -1,0 +1,10 @@
+.struct {
+  display: flex;
+  flex-flow: column nowrap;
+  @include flex-center;
+  gap: 80px;
+
+  @include mobile {
+    gap: 40px;
+  }
+}

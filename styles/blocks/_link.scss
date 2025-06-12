@@ -1,0 +1,13 @@
+.link {
+  white-space: nowrap;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  &--underline {
+    text-decoration: underline;
+  }
+
+  @include hover {
+    background-color: var(--color-brown);
+    color: var(--color-white);
+  }
+}

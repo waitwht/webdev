@@ -1,0 +1,50 @@
+.pricing {
+  &__cards {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 42px;
+    @include desktop {
+      gap: 21px;
+    }
+    @include tablet {
+      flex-flow: row wrap;
+    }
+  }
+
+  &__card {
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+    &-text {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 21px;
+      @include flex-center;
+    }
+
+    &-title {
+      @include fluid-text(30, 15);
+
+      @include desktop {
+        @include fluid-text(20, 15);
+      }
+    }
+    &-price {
+      @include fluid-text(60, 45);
+      font-weight: 600;
+      @include desktop {
+        @include fluid-text(40, 30);
+      }
+    }
+
+    &-button {
+      width: 225px;
+
+      @include desktop {
+        width: 150px;
+      }
+    }
+  }
+}

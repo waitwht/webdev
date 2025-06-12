@@ -1,0 +1,60 @@
+.hero {
+  background-color: var(--color-gray);
+
+  &__inner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    gap: 132px;
+    align-items: center;
+    @include desktop {
+      gap: 100px;
+    }
+
+    @include mobile {
+      padding-inline: var(--container-padding-x);
+      justify-content: center;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+
+    @include desktop {
+      gap: 15px;
+    }
+  }
+
+  &__title,
+  &__text p {
+    text-align: center;
+  }
+
+  &__connects {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+    padding-top: 27px;
+  }
+
+  &__image-left,
+  &__image-right {
+    @include desktop {
+      width: 20vw;
+      height: auto;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+}

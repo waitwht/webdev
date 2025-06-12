@@ -1,0 +1,10 @@
+.title-box {
+  display: flex;
+  flex-flow: column nowrap;
+  @include flex-center;
+  gap: 30px;
+
+  &__title {
+    text-align: center;
+  }
+}

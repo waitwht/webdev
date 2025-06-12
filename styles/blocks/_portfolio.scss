@@ -1,0 +1,24 @@
+.portfolio {
+  &__main {
+    --different: 55px;
+    --different-inverse: -55px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 49px;
+    margin-top: var(--different);
+    &-column {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 70px;
+
+      &--diff {
+        position: relative;
+        top: var(--different-inverse);
+      }
+    }
+
+    @include mobile {
+      flex-flow: column nowrap;
+    }
+  }
+}

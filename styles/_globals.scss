@@ -1,0 +1,59 @@
+body {
+  @include fluid-text(18, 16);
+
+  line-height: 1.28;
+  font-weight: 400;
+  font-family: "Gilroy", "Inter";
+
+  @include desktop {
+    @include fluid-text(14, 12);
+  }
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  @include fluid-text(78, 60);
+  font-family: "Inter";
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: -5%;
+
+  @include desktop {
+    @include fluid-text(50, 40);
+    line-height: 50px;
+  }
+}
+
+h2 {
+  @include fluid-text(45, 26);
+
+  @include desktop {
+    @include fluid-text(30, 20);
+  }
+}
+
+h3 {
+  @include fluid-text(30, 20);
+
+  @include desktop {
+    @include fluid-text(20, 18);
+  }
+}

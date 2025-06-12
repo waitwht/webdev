@@ -1,0 +1,35 @@
+:root {
+  --color-accent: #49ad09;
+  --color-dark: #313131;
+  --color-dark-alt: #1c1c1d;
+  --color-brown: #514040;
+  --color-blue: #32435c;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #f2f2f2;
+  --color-pale: #ededed;
+  --color-black-alt1: #31313106;
+  --color-black-alt2: #3131310a;
+  --color-black-alt3: #3131310d;
+  --color-black-alt4: #3131310f;
+  --color-black-alt5: #31313113;
+  --color-black-alt6: #3131311a;
+  --color-black-alt7: #48488a14;
+
+  --border-radius: 5px;
+
+  --container-padding-x: 135px;
+  --container-width: 1170px;
+
+  --section-padding-block: 71px;
+
+  --transition-duration: 0.2s;
+
+  --box-shadow-button: 0 2px 3px 0 var(--color-black-alt1),
+    0 8px 7px 0 var(--color-black-alt2), 0 20px 13px 0 var(--color-black-alt3),
+    0 39px 25px 0 var(--color-black-alt4), 0 65px 47px 0 var(--color-black-alt5),
+    0 100px 80px 0 var(--color-black-alt6);
+  @include desktop {
+    --container-padding-x: 40px;
+  }
+}

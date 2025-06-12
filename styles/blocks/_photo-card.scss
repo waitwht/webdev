@@ -1,0 +1,12 @@
+.photo-card {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 24px;
+
+  &__description {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

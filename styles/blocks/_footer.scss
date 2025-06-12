@@ -1,0 +1,82 @@
+.footer {
+  &__main {
+    padding-block: 77px;
+    border-bottom: 1px solid var(--color-pale);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7vw;
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile-s {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 35px;
+  }
+
+  &__copyright {
+    display: flex;
+    @include flex-center;
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__navigation {
+    &-list {
+      display: flex;
+      flex-flow: column nowrap;
+
+      gap: 28px;
+      align-items: start;
+    }
+  }
+
+  &__link {
+    padding-inline: 0;
+  }
+
+  &__copyright {
+    padding-block: 40px;
+  }
+
+  &__form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+
+  &__input {
+    background-color: var(--color-gray);
+    color: var(--color-brown);
+    border-radius: 4px;
+
+    height: 40px;
+    width: 174px;
+    padding: 12px;
+    padding-right: 35px;
+    position: relative;
+    z-index: 500;
+  }
+
+  &__button {
+    position: relative;
+    top: -30px;
+    right: -140px;
+    z-index: 1000;
+  }
+
+  &__soc1als {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    padding-top: 29px;
+  }
+}
